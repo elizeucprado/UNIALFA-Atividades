@@ -1,4 +1,4 @@
-![BANNER](BANNERQUESTOES-1.png)
+![BANNER](./img/BANNERQUESTOES.png)
 # Respostas - Questões sobre Java (AWT, Swing e JavaFX) ~ Elizeu Corrêa do Prado
 
 ### **1.** O que significa a sigla AWT em Java?
