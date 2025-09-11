@@ -1,4 +1,4 @@
-![BANNER](img/BANNERQUESTOES.png)
+![BANNER](./Img/UNIALFAATIVIDADES.png)
 
 # UNIALFA-Atividades
 
