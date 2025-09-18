@@ -1,4 +1,4 @@
-![BANNER](./img/.png)
+![BANNER](../Questoes/Img/BANNERHERANCA.png)
 # Respostas - Questões sobre Herança e Encapsulamento em Java ~ Elizeu Corrêa do Prado
 
 ### **1.** Em Java, qual palavra-chave é usada para indicar que uma classe herda de outra?
