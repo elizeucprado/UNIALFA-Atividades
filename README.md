@@ -10,7 +10,7 @@ Repositório destinado ao armazenamento e organização das atividades acadêmic
 
 - **Nome:** Elizeu Corrêa do Prado
 - **Curso:** Análise e Desenvolvimento de Sistemas
-- **GitHub:** [elizeucp](https://github.com/elizeucp)
+- **GitHub:** [elizeucprado](https://github.com/elizeucprado)
 
 ---
 
