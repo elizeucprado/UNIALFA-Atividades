@@ -31,6 +31,57 @@ Pois assim, os atributos de cada tabela dependem totalmente da chave primária d
 
 ## Exercício 4 – Conversão para 2FN
 
+1. Identificar as dependências funcionais:
+
+- PedidoID -> DataPedido, ClienteID
+- ClienteID -> NomeCliente
+- (PedidoID, ProdutoID) -> Quantidade
+- ProdutoID -> PrecoUnitario (supondo que o preço unitário é fixo para cada produto)
+
+2. Criar tabelas separadas:
+
+- Clientes: ClienteID (PK), NomeCliente
+- Pedidos: PedidoID (PK), DataPedido, ClienteID (FK_Clientes)
+- Produtos: ProdutoID (PK), PrecoUnitario
+- ItensPedido: PedidoID (FK_Pedidos), ProdutoID (FK_Produtos), Quantidade(PK composta por PedidoID e ProdutoID)
+
+### Tabela Clientes
+
+|ClienteID|NomeCliente|
+|---|---|
+|1|Joâo Silva|
+|2|Maria Doe|
+
+---
+
+### Tabela Pedidos
+
+|PedidoID|DataPedido|ClienteID|
+|---|---|---|
+|1|2023-03-01|1|
+|2|2023-03-02|2|
+
+---
+
+### Tabela Produtos
+
+|ProdutoID|PrecoUnitario|
+|---|---|
+|A|10.0|
+|B|20.0|
+
+---
+
+### Tabela ItensPedido
+
+|PedidoID|ProdutoID|Quantidade|
+|---|---|---|
+|1|A|5|
+|1|B|3|
+|2|A|2|
+
+---
+
 ## Exercício 5 – Tabela com Chave Composta
 
 |Atributos|Dependências|  
