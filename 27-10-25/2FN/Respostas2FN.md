@@ -42,3 +42,22 @@ Pois assim, os atributos de cada tabela dependem totalmente da chave primária d
 ## Exercício 9 – Teoria e Prática
 
 ## Exercício 10 – Revisão
+
+1. A Tabela não está em 2FN Pois, consta dependência parcial dos atributos-não chaves : NomeProduto e PrecoUnitario, que dependem somente do ProdutoID.
+Enquanto a Quantidade depende da VendaID+ProdutoID, Que são as chaves primárias compostas.
+
+2. Tabela Corrigida:
+
+|ProdutoID|NomeProduto|PrecoUnitario|
+|---|---|---|
+|201|Caneta|2.50|
+|202|Lápis|1.50|
+
+---
+
+|VendaID|ProdutoID|Quantidade|
+|---|---|---|
+|V001|201|10|
+|V001|202|5|
+
+Agora cada atributo depende totalmente de sua chave primária da sua tabela, ficando estruturada na 2FN.
