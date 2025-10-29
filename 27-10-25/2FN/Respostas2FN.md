@@ -33,6 +33,30 @@ Pois assim, os atributos de cada tabela dependem totalmente da chave primária d
 
 ## Exercício 5 – Tabela com Chave Composta
 
+|Atributos|Dependências|  
+|---|---|
+|Sala|CursoID|
+|NomeProfessor|ProfessorID|
+
+---
+
+## A refatoração da Tabela seria:
+
+### Tabela 1
+
+|CursoID|Sala|
+|---|---|
+|C01|101|
+|C02|102|
+
+### Tabela 2
+
+|ProfessorID|Nome Professor|
+|---|---|
+|P01|Ana|
+|P02|Bruno|
+|P03|Carla|
+
 ## Exercício 6 – Benefícios da 2FN
 
 ## Exercício 7 – Multivalorados e 2FN
