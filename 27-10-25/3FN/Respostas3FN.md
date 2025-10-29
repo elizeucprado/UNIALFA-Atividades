@@ -12,6 +12,10 @@
 
 ## Exercício 6 – Benefícios da 3FN
 
+1. Elimina dependências transitivas (campos que dependem de outros campos não-chave).
+2. Evita anomalias de atualização, inserção e exclusão.
+3. Melhora a integridade, clareza e confiabilidade do modelo de dados.
+
 ## Exercício 7 – Redundância e 3FN
 
 ## Exercício 8 – Exercício Prático
