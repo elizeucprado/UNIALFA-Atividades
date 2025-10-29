@@ -48,4 +48,15 @@
 
 ## Exercício 9 – Teoria e Prática
 
+### Tabela.
+
+| CPF | Funcionário | Projeto | Líder_Projeto |
+|---|---|---|---|
+|1111 | Renan | SIS | Sara|
+|2222 | Victor | CAD | Marcos|
+|3333 | Eduardo | UNI | Telma|
+|4444 | Maria | CAD | Marcos|
+
+Ela pertence a 2FN por não ter grupos repetidos nem dependência parcial. Porém, possui dependência transitiva, pois a coluna Líder_Projeto depende de uma coluna não-chave, a coluna Projeto.
+
 ## Exercício 10 – Revisão
