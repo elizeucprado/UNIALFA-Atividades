@@ -6,6 +6,8 @@ A Segunda Forma Normal afirma que todas as colunas que não fazem parte da chave
 
 ## Exercício 2 – Identificação
 
+A tabela não está em 2FN. Isso porque mesmo tendo chave composta, a coluna NomeProduto, depende apenas da coluna ProdutoID.
+
 ## Exercício 3 – Dependência Parcial
 
 Uma dependência parcial é quando um atributo não- chave depende apenas de parte da chave primária composta( duas ou mais chaves primárias, mais de uma colua  na mesma tabela), e não da chave inteira. 
