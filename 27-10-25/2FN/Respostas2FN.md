@@ -110,6 +110,10 @@ Pois assim, os atributos de cada tabela dependem totalmente da chave primária d
 
 ## Exercício 6 – Benefícios da 2FN
 
+1. Reduz redundâncias e evita dados duplicados.
+2. Evita anomalias de inserção, atualização e exclusão.
+3. Melhora a consistência e a manutenção do banco de dados.
+
 ## Exercício 7 – Multivalorados e 2FN
 
 ## Exercício 8 – Exercício Prático
