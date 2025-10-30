@@ -120,6 +120,47 @@ Pois assim, os atributos de cada tabela dependem totalmente da chave primária d
 
 ## Exercício 8 – Exercício Prático
 
+A Segunda Forma Normal (2FN) exige que a tabela esteja na Primeira Forma Normal (1FN)
+e que todos os atributos não-chave depende da chave primária completa. Neste modelo, a tabela de vendas possui chave primária composta (PedidoID + ProdutoID), e as dependências
+parciais foram separadas em outras tabelas.
+
+### Tabela Pedidos
+
+|PedidoID (PK)|DataPedido|ClienteID(FK)|
+|---|---|---|
+|101|2025-10-29|C01|
+|102|2025-10-29|C02|
+
+---
+
+### Tabela Produtos
+
+|ProdutoID (PK)|NomeProduto|Categoria|
+|---|---|---|
+|P01|Camiseta|Roupas|
+|P02|Boné|Acessórios|
+|P03|Tênis|Calçados|
+
+---
+
+### Tabela Vendas
+
+|PedidoID (PK,FK)|Produto (ID,FK)|Quantidade|Preço unitário|Subtotal|
+|---|---|---|---|---|
+|101| P01| 2| 50.00| 100.00|
+|101| P02| 1| 30.00| 30.00|
+|102| P01| 3| 50.00| 150.00|
+|102| P03| 1| 80.00| 80.00|
+
+---
+
+As tabelas estão em 2FN, pois: A tabela Vendas possui chave composta (PedidoID +
+ProdutoID).
+
+Os atributos Quantidade, PrecoUnitario e Subtotal dependem da chave completa. As
+dependências parciais (como informações do cliente e do produto) foram separadas em
+suas respectivas tabelas.
+
 ## Exercício 9 – Teoria e Prática
 
 ## Exercício 10 – Revisão
