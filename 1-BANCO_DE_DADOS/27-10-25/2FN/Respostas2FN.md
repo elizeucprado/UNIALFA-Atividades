@@ -159,7 +159,7 @@ ProdutoID).
 
 Os atributos Quantidade, PrecoUnitario e Subtotal dependem da chave completa. As
 dependências parciais (como informações do cliente e do produto) foram separadas em
-suas respectivas tabelas.
+suass respectivas tabelas.
 
 ## Exercício 9 – Teoria e Prática
 
