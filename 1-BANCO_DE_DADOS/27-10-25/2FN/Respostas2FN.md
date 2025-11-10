@@ -163,6 +163,31 @@ suass respectivas tabelas.
 
 ## Exercício 9 – Teoria e Prática
 
+Imagina que a gente tem uma tabela chamada Vendas, assim:
+
+|ID_Produto|ID_Cliente|Nome_Produto|Quantidade|Preço_Unitário|Nome_Cliente|
+|---|---|---|---|---|---|
+|P01|C01|Arroz|2|5,00|Ana|
+|P02|C01|Feijão|1|8,00|Ana|
+|P01|C02|Arroz|3|5,00|João|
+
+#
+
+Essa tabela já está na 1FN, porque:
+
+- todos os campos têm valores únicos (sem listas ou repetições), e cada célula guarda um único valor atômico.
+
+Mas ela não está na 2FN, porque o campo Nome_Produto depende só de parte da chave primária (ID_Produto + ID_Cliente).
+Ou seja, o nome do produto depende só do ID_Produto, e o nome do cliente depende só do ID_Cliente, e não da combinação dos dois.
+
+Pra resolver isso e chegar na 2FN, a gente teria que separar em tabelas diferentes, tipo:
+
+- uma tabela de Produtos (ID_Produto, Nome_Produto, Preço_Unitário)
+
+- uma tabela de Clientes (ID_Cliente, Nome_Cliente)
+
+- uma tabela de Vendas (ID_Produto, ID_Cliente, Quantidade)
+
 ## Exercício 10 – Revisão
 
 1. A Tabela não está em 2FN Pois, consta dependência parcial dos atributos-não chaves : NomeProduto e PrecoUnitario, que dependem somente do ProdutoID.
@@ -183,3 +208,4 @@ Enquanto a Quantidade depende da VendaID+ProdutoID, Que são as chaves primária
 |V001|202|5|
 
 Agora cada atributo depende totalmente de sua chave primária da sua tabela, ficando estruturada na 2FN.
+
