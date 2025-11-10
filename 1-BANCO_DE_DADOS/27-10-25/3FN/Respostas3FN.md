@@ -142,6 +142,19 @@ Na tabela Cursos, o CoordenadorCurso depende apenas do CursolD, então está tud
 
 ## Exercício 7 – Redundância e 3FN
 
+A 3FN foca principalmente em remover redundâncias e dependências transitivas.  
+
+Exemplo:  
+
+|AlunoID|NomeAluno|CursoID|NomeCurso|CoordenadorCurso|
+|---|---|---|---|---|
+|A01|João|C01|Matemática|Prof. Ana|
+|A02|Maria|C02|Física|Prof. Bruno|
+ 
+A tabela tem Coordenador que é dependente do NomeCurso que é dependente do Curso ID.  
+
+Logo não se encaixa no padrão 3Fn já que existe chave dependentes de chaves não primárias.
+
 ## Exercício 8 – Exercício Prático
 
 ### Tabela Departamentos
