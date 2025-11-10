@@ -5,7 +5,7 @@
 ## Exercício 2 – Identificação
 
 A tabela está em 3FN? Justifique sua resposta.
-A tabela não está em 3FN, Pois os atributos não-chave GerenteDepartamento depende  de Departamento e não de Funcionário diretamente, gerando uma dependência transitiva, pois isso viola a 3FN, O atributo GerenteDepartamento depende de outro atributo não-chave Departamento, e não diretamente da chave primária . 
+A tabela não está em 3FN, Pois os atributos não-chave GerenteDepartamento depende  de Departamento e não de Funcionário diretamente, gerando uma dependência transitiva, pois isso viola a 3FN, O atributo GerenteDepartamento depende de outro atributo não-chave Departamento, e não diretamente da chave primária.
 
 ### 👥 Tabela Funcionarios
 
@@ -74,6 +74,63 @@ Dividimos a tabela em duas:
 Agora, cada atributo não chave depende diretamente da chave primária de sua própria tabela — e não há mais dependência transitiva. Assim, as tabelas estão na Terceira Forma Normal (3FN).
 
 ## Exercício 4 – Conversão para 3FN
+
+Tabela Original
+|AlunolD|NomeAluno|CursolD|NomeCurso|CoordenadorCurso|
+|---|---|---|---|---|
+|A01|João|C01|Matemática|Professora Ana|
+|A02|Maria|C02|Física|Professor Bruno|
+
+### 2ª Forma Normal (2FN)
+
+Para atingir a 2FN, precisamos eliminar dependências parciais. Vamos criar tabelas separadas para Alunos e Cursos.
+
+### Tabela Alunos
+
+|AlunolD|NomeAluno|
+|---|---|
+|A01|João|
+|A02|Maria|
+
+### Tabela Cursos
+
+|CursolD|NomeCurso|CoordenadorCurso|
+|---|---|---|
+|C01|Matemática|Professora Ana|
+|C02|Física|Professor Bruno|
+
+### Tabela Alunos x Cursos
+
+|AlunoID|CursoID|
+|---|---|
+|A01|C01|
+|A02|C01|
+
+### 3ª Forma Normal (3FN)
+
+Na tabela Cursos, o CoordenadorCurso depende apenas do CursolD, então está tudo bem.
+
+### Tabelas Finais
+### Tabela Alunos
+
+|AlunolD|NomeAluno|
+|---|---|
+|A01|João|
+|A02|Maria|
+
+### Tabela Cursos
+
+|CursolD|NomeCurso|CoordenadorCurso|
+|---|---|---|
+|C01|Matemática|Professora Ana|
+|C02|Física|Professor Bruno|
+
+### Tabela Alunos x Cursos
+
+|AlunoID|CursoID|
+|---|---|
+|A01|C01|
+|A02|C01|
 
 ## Exercício 5 – Tabela com Dependência Transitiva
 
