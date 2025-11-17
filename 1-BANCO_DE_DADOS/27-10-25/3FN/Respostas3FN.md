@@ -2,6 +2,13 @@
 
 ## Exercício 1 – Conceito
 
+Uma tabela está na 3FN, quando:
+
+- Está na 2FN, ou seja,  não possui dependências parciais da chave.
+- Nenhuma coluna não-chave depende de outra coluna não-chave.
+
+**EM OUTRAS PALAVRAS:** Cada atributo deve depender diretamente da chave primária, e somente dela sem passar por outra coluna intermediária. Isso elimina "dependências transitivas" e evita redundâncias.
+
 ## Exercício 2 – Identificação
 
 A tabela está em 3FN? Justifique sua resposta.
