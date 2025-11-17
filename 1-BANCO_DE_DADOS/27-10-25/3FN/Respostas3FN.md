@@ -141,6 +141,35 @@ Na tabela Cursos, o CoordenadorCurso depende apenas do CursolD, então está tud
 
 ## Exercício 5 – Tabela com Dependência Transitiva
 
+### Tabela
+
+|AlunoID|NomeAluno|CursoID|NomeCurso|CoordenadorCurso|
+|---|---|---|---|---|
+||||||
+
+### Dependências
+
+- CursoID -> NomeCurso
+- CursoID -> CoordenadorCurso
+
+Isso significa que **NomeCurso** e **CoordenadorCurso** dependem do curso, não do aluno.
+
+Logo, temos dependência transitiva:
+
+    AlunoID -> CursoID -> NomeCurso/CoordenadorCurso
+
+- **Conversão para 3FN:**
+
+### Tabela Alunos
+
+|AlunoID (PK)|NomeAluno|CursoID (FK)|
+|---|---|---|
+
+### Tabela Cursos
+
+|CursoID (PK)|NomeCurso|CoordenadorCurso|
+|---|---|---|
+
 ## Exercício 6 – Benefícios da 3FN
 
 1. Elimina dependências transitivas (campos que dependem de outros campos não-chave).
