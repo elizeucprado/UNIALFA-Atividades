@@ -1,4 +1,8 @@
-function p(a, b){
+/// Aula 1
+
+
+// Função Não-ágil
+/* function p(a, b){
     let r =[];
     if (a != null && a.length > 0){
         for (let i = 0; i <a.length; i++){
@@ -18,3 +22,11 @@ function p(a, b){
 
 const dados = [{n:"Notebook", V:2500, s:true}, {n:"Mouse", V:50, s:true}];
 console.log(p(dados,500));
+*/
+
+// Função ÁGIL
+function filtrarProdutosCarosEmEstoque(produtos, precoMinimo){
+    return produtos
+    .filter(item => item.estoque && item.preco > precoMinimo)
+    .map(item => item.nome.toUpperCase());
+}
