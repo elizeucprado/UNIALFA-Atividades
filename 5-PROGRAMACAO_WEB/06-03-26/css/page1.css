@@ -1,0 +1,72 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 60px;
+}
+
+hr{
+    width: 50%;
+    height: 6px;
+    background-color: white;
+}
+
+.spotify{
+    display: flex;
+    background-color: #1DB954;
+
+    width: 100%;
+    height: 60px;
+
+    border-radius: 15px;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+    margin: 25px;
+}
+
+p{
+    color: black;
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.letra{
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    background-color: white;
+}
+
+h2{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: black;
+    font-size: 32px;
+}
+
+pre{
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+}
